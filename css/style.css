@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: #222;
+}
+body {
+    margin: 1% 20% 1% 20%;
+}
+
+#about-github {
+    color: #4078c0;
+    text-underline-offset: 30%;
+}
+#about-linkedin {
+    color: #0077b5;
+    text-underline-offset: 40%;
+}
+
+.color-html {
+    color: #e34c26;
+}
+.color-css {
+    color: #2965f1;
+}
+.color-js {
+    color: #f0db4f;
+}
+.color-react {
+    color: #61dbfb;
+}
+.color-redux {
+    color: #764abc;
+}
+
+.project-link {
+    color: #777;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.project-link:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.contact-btn {
+    font-size: medium;
+    color: #777;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.contact-btn:hover {
+    color: #fff;
+}
