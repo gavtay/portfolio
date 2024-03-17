@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (emailBtn) {
         emailBtn.addEventListener('click', (event) => {
             copyURL();
-            // alert('email successfully copied');
+            alert('email successfully copied');
         })
     }
 
