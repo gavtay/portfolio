@@ -1,8 +1,8 @@
 * {
     margin: 0;
     font-family: sans-serif;
-    color: #fff;
-    background-color: #222;
+    /* color: #fff;
+    background-color: #222; */
 }
 body {
     margin: 1% 20% 1% 20%;
@@ -22,7 +22,7 @@ body {
     text-underline-offset: 40%;
 }
 
-.color-html {
+/* .color-html {
     color: #e34c26;
 }
 .color-css {
@@ -36,26 +36,28 @@ body {
 }
 .color-redux {
     color: #764abc;
-}
+} */
 
 .project-link {
-    color: #777;
+    /* color: #777; */
+    border-bottom: 2px solid #000;
     cursor: pointer;
-    transition: 0.4s;
+    /* transition: 0.4s; */
 }
 .project-link:hover {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    /* color: #fff; */
+    color: #999;
+    border-bottom: 2px solid #777;
 }
 
 .contact-btn {
     font-size: medium;
-    color: #777;
+    /* color: #777; */
     background-color: transparent;
     border: none;
     cursor: pointer;
-    transition: 0.4s;
+    /* transition: 0.4s; */
 }
 .contact-btn:hover {
-    color: #fff;
+    color: #999;
 }
