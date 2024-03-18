@@ -50,6 +50,10 @@ body {
     border-bottom: 2px solid #fff;
 }
 
+.website-img {
+    width: 80%;
+}
+
 .contact-btn {
     font-size: medium;
     color: #777;
