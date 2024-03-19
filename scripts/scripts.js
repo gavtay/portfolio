@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {  
+    // const projectLink = document.getElementsByClassName('project-link');
     const emailBtn = document.getElementById('email-btn');
     
     addProjects();
@@ -19,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
             // a element for each project
             aElement.setAttribute("class", "project-link");
             aElement.setAttribute("id", projectsObjArray[i].id);
-            aElement.setAttribute("onclick", `window.open('${projectsObjArray[i].url}','_blank')`);
+            aElement.setAttribute("onclick", `window.open('${projectsObjArray[i].url}', '_blank')`);
             aElement.innerText = projectsObjArray[i].name;
             
             // loop through spans for each project
@@ -63,7 +64,7 @@ window.addEventListener("DOMContentLoaded", () => {
             document.getElementsByClassName('projects')[0].appendChild(brElement);
         }
     }
-        
+
 
     // Copy Email
     if (emailBtn) {

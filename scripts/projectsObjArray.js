@@ -2,7 +2,7 @@ const projectsObjArray = [
     {
         id: 'porfolio-website',
         class: 'project-link',
-        url: "'https://github.com/gavtay/portfolio','_blank'",
+        url: 'https://github.com/gavtay/portfolio',
         img: null,
         imgAlt: null,
         name: 'portfolio website',
@@ -25,7 +25,7 @@ const projectsObjArray = [
     {
         id: 'gym-website',
         class: 'project-link',
-        url: "'https://github.com/gavtay/redlinetx','_blank'",
+        url: 'https://github.com/gavtay/redlinetx',
         img: './assets/gym-site.png',
         imgAlt: 'picture of gym website', 
         name: 'gym website',
@@ -48,7 +48,7 @@ const projectsObjArray = [
     {
         id: 'todo-website',
         class: 'project-link',
-        url: "'https://github.com/gavtay/todoapp','_blank'",
+        url: 'https://github.com/gavtay/todoapp',
         img: './assets/todo-site.png',
         imgAlt: 'picture of todo website',
         name: 'todo list',
@@ -75,7 +75,7 @@ const projectsObjArray = [
     {
         id: 'showfinder-website',
         class: 'project-link',
-        url: "'https://github.com/gavtay/showfinder','_blank'",
+        url: 'https://github.com/gavtay/showfinder',
         img: './assets/showfinder-site.png',
         imgAlt: 'picture of showfinder website',
         name: 'show finder',
