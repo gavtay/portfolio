@@ -1,28 +1,5 @@
 const projectsObjArray = [
     {
-        id: 'porfolio-website',
-        class: 'project-link',
-        url: 'https://github.com/gavtay/portfolio',
-        img: null,
-        imgAlt: null,
-        name: 'portfolio website',
-        skills: [
-            {
-                skillName: 'HTML',
-                skillType: 'color-html'
-            }, 
-            {
-                skillName: 'CSS',
-                skillType: 'color-css'
-            },
-            {
-                skillName: 'JS',
-                skillType: 'color-js'
-            }
-        ],
-        description: 'static site showcasing my portfolio.'
-    },
-    {
         id: 'gym-website',
         class: 'project-link',
         url: 'https://github.com/gavtay/redlinetx',
@@ -43,7 +20,7 @@ const projectsObjArray = [
                 skillType: 'color-js'
             }
         ],
-        description: 'static ReactJS site.'
+        description: 'simple static responsive ReactJS site.'
     },
     {
         id: 'todo-website',
@@ -98,5 +75,28 @@ const projectsObjArray = [
             }
         ],
         description: 'webapp that allows one to create / select a login. once user is logged in, the user can scroll through various shows, categorized in several ways, with the ability to scroll. the user may also search, for specific shows. when desired, the user may sign out.'
+    },
+    {
+        id: 'porfolio-website',
+        class: 'project-link',
+        url: 'https://github.com/gavtay/portfolio',
+        img: null,
+        imgAlt: null,
+        name: 'portfolio website',
+        skills: [
+            {
+                skillName: 'HTML',
+                skillType: 'color-html'
+            }, 
+            {
+                skillName: 'CSS',
+                skillType: 'color-css'
+            },
+            {
+                skillName: 'JS',
+                skillType: 'color-js'
+            }
+        ],
+        description: 'static site showcasing my portfolio. i would add a picture, however, i think we both know that is not necessary.'
     }
 ];

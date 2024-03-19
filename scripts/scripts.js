@@ -20,8 +20,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
             containerElement.setAttribute("class", "project-container");
             divElement.setAttribute("class", "project-div");
+            descriptionElement.append(projectsObjArray[i].description);
             spaceElement.innerText = ' - ';
-            descriptionElement.innerText = projectsObjArray[i].description;
             
             // <a> element for each project
             aElement.setAttribute("class", "project-link");
@@ -52,7 +52,6 @@ window.addEventListener("DOMContentLoaded", () => {
             for (let i = 0; i < spanElementsArray.length; ++i) {
                 divElement.append(spanElementsArray[i]);
             }
-            descriptionElement.append(projectsObjArray[i].description);
             containerElement.append(divElement);
             containerElement.append(descriptionElement);
             
@@ -74,8 +73,11 @@ window.addEventListener("DOMContentLoaded", () => {
                 document.getElementsByClassName('projects')[0].appendChild(brElement1);
             }
 
-            document.getElementsByClassName('projects')[0].appendChild(brElement);
+            const brElement2 = document.createElement('br');
+            document.getElementsByClassName('projects')[0].appendChild(brElement2);
         }
+        // const brElement3 = document.createElement('br');
+        // document.getElementsByClassName('projects')[0].appendChild(brElement3);
     }
 
 
