@@ -1,11 +1,11 @@
 const projectsObjArray = [
     {
-        id: 'gym-website',
+        id: 'showfinder-website',
         class: 'project-link',
-        url: 'https://github.com/gavtay/redlinetx',
-        img: './assets/gym-site.png',
-        imgAlt: 'picture of gym website', 
-        name: 'gym website',
+        url: 'https://github.com/gavtay/showfinder',
+        img: './assets/showfinder-site.png',
+        imgAlt: 'picture of showfinder website',
+        name: 'show finder',
         skills: [
             {
                 skillName: 'CSS',
@@ -18,9 +18,13 @@ const projectsObjArray = [
             {
                 skillName: 'JS',
                 skillType: 'color-js'
+            },
+            {
+                skillName: 'Redux',
+                skillType: 'color-redux'
             }
         ],
-        description: 'simple static responsive ReactJS site.'
+        description: 'webapp that allows one to create / select a login. once user is logged in, the user can scroll through various shows, categorized in several ways, with the ability to scroll. the user may also search, for specific shows. when desired, the user may sign out.'
     },
     {
         id: 'todo-website',
@@ -50,12 +54,12 @@ const projectsObjArray = [
         description: 'todo list webapp with the ability to create, and delete projects as well as project list items. search function for projects. created with reactJS and redux.'
     },
     {
-        id: 'showfinder-website',
+        id: 'gym-website',
         class: 'project-link',
-        url: 'https://github.com/gavtay/showfinder',
-        img: './assets/showfinder-site.png',
-        imgAlt: 'picture of showfinder website',
-        name: 'show finder',
+        url: 'https://github.com/gavtay/redlinetx',
+        img: './assets/gym-site.png',
+        imgAlt: 'picture of gym website', 
+        name: 'gym website',
         skills: [
             {
                 skillName: 'CSS',
@@ -68,13 +72,9 @@ const projectsObjArray = [
             {
                 skillName: 'JS',
                 skillType: 'color-js'
-            },
-            {
-                skillName: 'Redux',
-                skillType: 'color-redux'
             }
         ],
-        description: 'webapp that allows one to create / select a login. once user is logged in, the user can scroll through various shows, categorized in several ways, with the ability to scroll. the user may also search, for specific shows. when desired, the user may sign out.'
+        description: 'simple static responsive ReactJS site.'
     },
     {
         id: 'porfolio-website',
