@@ -22,6 +22,13 @@ body {
     text-underline-offset: 40%;
 }
 
+.project-container {
+    /* display: grid; */
+}
+.project-div {
+    display: flex;
+}
+
 .color-html {
     color: #e34c26;
 }
