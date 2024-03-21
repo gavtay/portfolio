@@ -23,9 +23,18 @@ body {
 }
 
 .project-container {
-}
-.project-div {
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info-project-container {
+    align-items: center;
+}
+
+.project-div {
+    text-align: center;
 }
 
 .color-html {
@@ -45,17 +54,18 @@ body {
 }
 
 .project-link {
+    display: block;
     color: #777;
-    border-bottom: 2px solid #777;
+    /* border-bottom: 2px solid #777; */
     cursor: pointer;
 }
 .project-link:hover {
     color: #fff;
-    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid #fff; */
 }
 
 .website-img {
-    width: 80%;
+    width: 60%;
 }
 
 .contact-btn {

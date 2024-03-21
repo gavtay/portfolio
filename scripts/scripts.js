@@ -9,19 +9,18 @@ window.addEventListener("DOMContentLoaded", () => {
         // loop through each project
         for (let i = 0; i < projectsObjArray.length; ++i) {
             const containerElement = document.createElement('div');
+            const infoContainerElement = document.createElement('div');
             const divElement = document.createElement('div');
-            const brElement = document.createElement('br');
             const aElement = document.createElement('a');
             const descriptionElement = document.createElement('p');
-            const spaceElement = document.createElement('p');
             
             // array of spans for each projects skills
             let spanElementsArray = [];
 
             containerElement.setAttribute("class", "project-container");
+            infoContainerElement.setAttribute("class", "info-project-container")
             divElement.setAttribute("class", "project-div");
             descriptionElement.append(projectsObjArray[i].description);
-            spaceElement.innerText = ' - ';
             
             // <a> element for each project
             aElement.setAttribute("class", "project-link");
@@ -47,37 +46,28 @@ window.addEventListener("DOMContentLoaded", () => {
 
             // Append each part to the div and container
             divElement.append(aElement);  
-            divElement.append(spaceElement);
             // append spans to div
             for (let i = 0; i < spanElementsArray.length; ++i) {
                 divElement.append(spanElementsArray[i]);
             }
-            containerElement.append(divElement);
-            containerElement.append(descriptionElement);
+            infoContainerElement.append(divElement);
+            infoContainerElement.append(descriptionElement);
+            containerElement.append(infoContainerElement);
             
-            document.getElementsByClassName('projects')[0].appendChild(containerElement);
-            document.getElementsByClassName('projects')[0].appendChild(brElement);
-            
-
-
             // if the project has a non null value in array object, create and append the image
             if (projectsObjArray[i].img !== null) {
                 const websiteImg = document.createElement('img');
-                const brElement1 = document.createElement('br');
 
                 websiteImg.src = projectsObjArray[i].img;
                 websiteImg.setAttribute("class", "website-img");
                 websiteImg.setAttribute("alt", projectsObjArray.imgAlt)
                 
-                document.getElementsByClassName('projects')[0].appendChild(websiteImg);
-                document.getElementsByClassName('projects')[0].appendChild(brElement1);
+                containerElement.append(websiteImg);
             }
-
-            const brElement2 = document.createElement('br');
-            document.getElementsByClassName('projects')[0].appendChild(brElement2);
+        
+            document.getElementsByClassName('projects')[0].appendChild(containerElement);    
         }
-        // const brElement3 = document.createElement('br');
-        // document.getElementsByClassName('projects')[0].appendChild(brElement3);
+
     }
 
 
