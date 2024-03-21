@@ -25,16 +25,23 @@ body {
 .project-container {
     margin-top: 5%;
     margin-bottom: 5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
-.info-project-container {
-    align-items: center;
+.project-div {
+    text-align: left;
+}
+@media screen and (min-width: 750px) {
+    .project-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .project-div {
+        text-align: center;
+    }
 }
 
-.project-div {
-    text-align: center;
+.info-project-container {
+    align-items: center;
 }
 
 .color-html {
@@ -56,12 +63,10 @@ body {
 .project-link {
     display: block;
     color: #777;
-    /* border-bottom: 2px solid #777; */
     cursor: pointer;
 }
 .project-link:hover {
     color: #fff;
-    /* border-bottom: 2px solid #fff; */
 }
 
 .website-img {
