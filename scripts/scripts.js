@@ -1,17 +1,16 @@
 window.addEventListener("DOMContentLoaded", () => {  
-    // const projectLink = document.getElementsByClassName('project-link');
     const emailBtn = document.getElementById('email-btn');
     
     addProjects();
     function addProjects() {
-        const projectSection = document.getElementsByClassName('projects');
         
         // loop through each project
         for (let i = 0; i < projectsObjArray.length; ++i) {
             const containerElement = document.createElement('div');
             const infoContainerElement = document.createElement('div');
             const divElement = document.createElement('div');
-            const aElement = document.createElement('a');
+            const titleDivElement = document.createElement('div');
+            const repoElement = document.createElement('a');
             const descriptionElement = document.createElement('p');
             
             // array of spans for each projects skills
@@ -19,14 +18,29 @@ window.addEventListener("DOMContentLoaded", () => {
 
             containerElement.setAttribute("class", "project-container");
             infoContainerElement.setAttribute("class", "info-project-container")
+            titleDivElement.setAttribute("class", "title-div");
             divElement.setAttribute("class", "project-div");
             descriptionElement.append(projectsObjArray[i].description);
             
-            // <a> element for each project
-            aElement.setAttribute("class", "project-link");
-            aElement.setAttribute("id", projectsObjArray[i].id);
-            aElement.setAttribute("onclick", `window.open('${projectsObjArray[i].url}', '_blank')`);
-            aElement.innerText = projectsObjArray[i].name;
+            // links for each project
+            repoElement.setAttribute("class", "project-link");
+            repoElement.setAttribute("id", projectsObjArray[i].id);
+            repoElement.setAttribute("onclick", `window.open('${projectsObjArray[i].url}', '_blank')`);
+            repoElement.innerText = projectsObjArray[i].name;
+
+            // Append each part to the div and container
+            titleDivElement.append(repoElement);  
+            
+            // if object has a live preview url, append it
+            if (projectsObjArray[i].liveUrl !== null) {
+                const liveElement = document.createElement('a');
+
+                liveElement.setAttribute("class", "project-link");
+                liveElement.setAttribute("onclick", `window.open('${projectsObjArray[i].liveUrl}', '_blank')`);
+                liveElement.innerText = 'live preview';
+
+                titleDivElement.append(liveElement);
+            } 
             
             // loop through spans for each project
             for (let j = 0; j < projectsObjArray[i].skills.length; ++j) {
@@ -44,8 +58,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 spanElementsArray.push(spanElement);
             }
 
-            // Append each part to the div and container
-            divElement.append(aElement);  
+            divElement.append(titleDivElement);
             // append spans to div
             for (let i = 0; i < spanElementsArray.length; ++i) {
                 divElement.append(spanElementsArray[i]);

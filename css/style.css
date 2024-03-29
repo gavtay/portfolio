@@ -31,6 +31,12 @@ body {
 .project-div {
     text-align: left;
 }
+.title-div {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+}
 @media screen and (min-width: 750px) {
     .project-container {
         display: flex;
@@ -63,6 +69,8 @@ body {
 }
 
 .project-link {
+    margin-left: 5%;
+    margin-right: 5%;
     display: block;
     color: #777;
     cursor: pointer;
